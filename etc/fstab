@@ -1,0 +1,7 @@
+#Network folders
+tnsc01:/mnt/zpool2/backups      /mnt/tnsc01/backups     nfs     rw,noatime      0       0
+tnsc01:/mnt/zpool2/libs         /mnt/tnsc01/libs        nfs     rw,noatime      0       0
+tnsc01:/mnt/zpool2/music        /mnt/tnsc01/music       nfs     rw,noatime      0       0
+tnsc01:/mnt/zpool3/sasmaps      /mnt/tnsc01/sasmaps     nfs     rw,noatime      0       0
+tnsc01:/mnt/zpool2/software     /mnt/tnsc01/software    nfs     rw,noatime      0       0
+tnsc01:/mnt/zpool2/video        /mnt/tnsc01/video       nfs     rw,noatime      0       0
