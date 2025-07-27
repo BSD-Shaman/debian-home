@@ -1,0 +1,18 @@
+<file system> <mount point>   <type>  <options>       <dump>  <pass>
+/dev/mapper/pc0g2lfv--vg-root                   /       btrfs   defaults,noatime,subvol=@rootfs         0       0
+UUID=e46122b5-5724-489f-9f2a-a30308d839d0       /boot   btrfs   defaults,noatime                        0       0
+UUID=75E8-06CA                                  /boot/efi       vfat    umask=0077                      0       1
+/dev/mapper/pc0g2lfv--vg-swap_1                 none            swap    sw                              0       0
+
+#tmpfs
+tmpfs   /tmp/tmpfs      tmpfs   size=1G                                 0       0
+tmpfs   /var/log        tmpfs   noexec,defaults,noatime,nodiratime      0       0
+
+# Network folders
+fs01:/mnt/zpool1/backups        /mnt/fs01/backups       nfs     noatime         0       0
+fs01:/mnt/zpool1/docs           /mnt/fs01/docs          nfs     noatime         0       0
+fs01:/mnt/zpool1/software       /mnt/fs01/software      nfs     noatime         0       0
+
+tns01:/mnt/zpool3/audio         /mnt/tns01/audio        nfs     noatime         0       0
+tns01:/mnt/zpool3/libs          /mnt/tns01/libs         nfs     noatime         0       0
+tns01:/mnt/zpool3/video         /mnt/tns01/video        nfs     noatime         0       0
